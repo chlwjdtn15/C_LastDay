@@ -21,6 +21,22 @@
 #define true 1
 // #define SIZE 3 // 수정 불가
 
+
+
+void print_99dan() {
+  
+  int dan;
+  int i;
+
+  for(dan = 2; dan < 10; dan++) {
+    for(int i = 1; i < 10; i++) {
+      printf("%d * %d = %d\n", dan, i ,dan * i);
+    }
+  }
+}
+
+
+
 int main(void) {
   
 //   int ages[SIZE]; // 수정 불가
@@ -76,47 +92,75 @@ int main(void) {
 5번째 사람의 나이 : 27
 */
 
-int* ages = (int*)malloc(sizeof(int));
+// int* ages = (int*)malloc(sizeof(int));
 
 
 
-int count;
+// int count;
 
-if (ages == NULL) {
-  printf("malloc error");
-}
+// if (ages == NULL) {
+//   printf("malloc error");
+// }
 
-while(true) {
-  printf("사람의 숫자를 입력해 주세요 : ");
-  scanf("%d", &count);
+// while(true) {
+//   printf("사람의 숫자를 입력해 주세요 : ");
+//   scanf("%d", &count);
 
-  if(count > 0 && count <= 5) {
-    break;
+//   if(count > 0 && count <= 5) {
+//     break;
 
 
-  } else {
-    printf("3이하로 입력해주세요.\n");
-  }
-}
+//   } else {
+//     printf("3이하로 입력해주세요.\n");
+//   }
+// }
 
-for(int i = 0; i < count; i++) {
+// for(int i = 0; i < count; i++) {
 
-  printf("%d번째 사람의 나이를 입력해 주세요 : ", i + 1);
+//   printf("%d번째 사람의 나이를 입력해 주세요 : ", i + 1);
 
-    scanf("%d", &ages[i]);
+//     scanf("%d", &ages[i]);
 
 
     
 
-}
+// }
 
-for(int i = 0; i < count; i++) {
-  printf("%d번째 사람의 나이 : %d\n", i + 1, ages[i]);
-}
+// for(int i = 0; i < count; i++) {
+//   printf("%d번째 사람의 나이 : %d\n", i + 1, ages[i]);
+// }
 
 
-  free(ages);
+//   free(ages);
  
+
+
+//=================================================================================//
+
+/* 문제 */
+/*
+- 컴파일 타임이란 무엇인가? : 
+- 런타임이란 무엇인가? :
+- `int arr[20];` 방식과 `int *arr = malloc(sizeof(int) * 5);` 방식에서 서로에 대한 장단점을 써주세요.
+  - `int arr[20]` 장점 : 
+  - `int arr[20]` 단점 : 
+  - `int *arr = malloc(sizeof(int) * 5)` 장점 : 
+  - `int *arr = malloc(sizeof(int) * 5)` 단점 : 
+- `size`가 int 변수이고 값이 `5` 일때, `int arr[size];` 가 안되는 이유는? :
+- 동적할당이란 무엇인가? :
+- 정적할당이란 무엇인가? :
+- 정적할당의 장점은? :
+- 정적할당의 단점은? :
+- 동적할당의 장점은? :
+- 동적할당의 단점은? :
+*/
+
+//==============================================================================//
+
+// 문제 : int 없이, int*와 malloc을 사용해서 함수를 다시 만들어주세요.
+
+
+  print_99dan();
 
   return 0;
 }
