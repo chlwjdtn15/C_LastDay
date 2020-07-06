@@ -90,7 +90,7 @@ while(true) {
   printf("사람의 숫자를 입력해 주세요 : ");
   scanf("%d", &count);
 
-  if(count > 0 && count <= 3) {
+  if(count > 0 && count <= 5) {
     break;
 
 
